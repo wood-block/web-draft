@@ -1,7 +1,6 @@
 .header {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    border: solid;
+    max-width: 1200px;
+    margin: 32px auto;
 }
 
 .header__inner {
@@ -33,4 +32,44 @@
 .menu__auth {
     width: 100%;
     font-size: 2.25rem;
+}
+
+.main {
+    height: 100vh;
+}
+
+.main__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main__img {
+    height: 580px;
+    border: solid;
+}
+
+.main__content {
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin: 0 auto;
+    width: auto;
+}
+
+.main__info {
+    width: 384px;
+    height: 337px;
+    font-size: 1.75rem;
+}
+
+.info__border {
+    border: 1px solid #707070;
+    margin-top: 14px;
+}
+
+.info__content {
+    font-size: 1.25rem;
+}
+
 }
