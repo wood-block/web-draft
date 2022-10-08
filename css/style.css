@@ -1,11 +1,13 @@
 .header {
-    max-width: 1200px;
-    margin: 32px auto;
+    padding-top: 32px;
 }
 
 .header__inner {
-    padding-left: 2.1875%;
-    padding-right: 3.75%;
+    max-width: 1230px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .menu {
@@ -17,30 +19,32 @@
     font-size: 2.625rem;
 }
 
-.menu__list {
+.nav__inner {
     display: flex;
-    width: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
-.menu__item {
-    display: inline;
-    white-space: nowrap;
-    margin-right: 2.0833%;
+.nav__link {
+    display: inline-block;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 30px;
     font-size: 2.25rem;
 }
 
-.menu__auth {
+.nav__link:last-child {
+    padding-right: 0px;
+}
+
+.nav__auth {
     width: 100%;
     font-size: 2.25rem;
 }
 
 .main {
-    height: 100vh;
-}
-
-.main__inner {
-    max-width: 1200px;
-    margin: 0 auto;
+    height: 100%;
 }
 
 .main__img {
@@ -49,17 +53,15 @@
 }
 
 .main__content {
-    padding-top: 60px;
+    max-width: 1230px;
+    padding: 60px 15px;
     display: flex;
     justify-content: space-between;
-    height: 100%;
     margin: 0 auto;
-    width: auto;
 }
 
 .main__info {
     width: 384px;
-    height: 337px;
     font-size: 1.75rem;
 }
 
