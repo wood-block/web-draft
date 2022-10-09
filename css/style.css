@@ -131,4 +131,45 @@
 .media__text {
     font-size: 1.25rem;
 }
+
+.footer {
+    background-color: #525151;
+    padding-top: 61px;
+    padding-bottom: 91px;
+    color: white;
+}
+
+.footer__inner {
+    max-width: 1230px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footer__menu {
+    font-size: 1.875rem;
+    padding-bottom: 30px;
+    border-bottom: 2px solid white;
+}
+
+.footer__contact {
+    padding-top: 86px;
+    font-size: 1.625rem;
+    margin-bottom: 60px;
+}
+
+.footer__btn {
+    display: inline-block;
+    width: 236px;
+    max-width: 100%;
+    padding: 20px 10px;
+    background-color: #403E3E;
+    border-radius: 21px;
+    -webkit-border-radius: 21px;
+    -moz-border-radius: 21px;
+    -ms-border-radius: 21px;
+    -o-border-radius: 21px;
+    font-size: 1.625rem;
+    text-align: center;
 }
