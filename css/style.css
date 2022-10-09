@@ -74,4 +74,61 @@
     font-size: 1.25rem;
 }
 
+.concert-background-color-base {
+    background-color: #0303039D;
+}
+
+.concert {
+    max-width: 1230px;
+    padding: 102px 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.concert__title {
+    color: white;
+    font-size: 2.5rem;
+    padding-bottom: 24px;
+    border-bottom: 1px solid white;
+}
+
+.concert__content {
+    padding-top: 36px;
+}
+
+.concert__content>div:last-child {
+    border-bottom: 0;
+}
+
+.media {
+    color: white;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+}
+
+.media__img-wrapper {
+    flex: 0 1 27.58333%;
+    margin-right: 2%;
+}
+
+.media__img {
+    width: 100%;
+    height: 330px;
+    background-color: white;
+}
+
+.media__body {
+    flex: 1;
+}
+
+.media__title {
+    font-size: 1.875rem;
+    margin-bottom: 36px;
+}
+
+.media__text {
+    font-size: 1.25rem;
+}
 }
