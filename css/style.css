@@ -1,5 +1,6 @@
 .header {
     padding-top: 32px;
+    padding-bottom: 25px;
 }
 
 .header__inner {
@@ -31,7 +32,17 @@
     padding-right: 30px;
     padding-bottom: 10px;
     padding-left: 30px;
+    color: black;
     font-size: 2.25rem;
+    text-decoration-line: none;
+    -moz-text-decoration-line: none;
+}
+
+#trigger {
+    display: none;
+    color: black;
+    font-size: 2.25rem;
+    text-decoration-line: none;
 }
 
 .nav__link:last-child {
@@ -172,4 +183,31 @@
     -o-border-radius: 21px;
     font-size: 1.625rem;
     text-align: center;
+}
+
+/*
+TODO header가 모바일에서 display:none 상태에서 사이즈가 증가하여 media query가 해제 될 경우 display:none 상태를 해제 해줘야함
+*/
+@media screen and (max-width:1023px) {
+    .menu {
+        display: block;
+        position: relative;
+    }
+
+    .nav__inner {
+        display: none;
+        text-align: right;
+    }
+
+    .nav__link {
+        display: block;
+        padding: 10px 0;
+    }
+
+    #trigger {
+        display: block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
 }
