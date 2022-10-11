@@ -210,4 +210,14 @@ TODO header가 모바일에서 display:none 상태에서 사이즈가 증가하�
         right: 0px;
         top: 0px;
     }
+
+    .main__content {
+        display: block;
+        margin-bottom: -20px;
+    }
+
+    .main__info {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
