@@ -1,0 +1,235 @@
+.header {
+    padding-top: 32px;
+    padding-bottom: 25px;
+}
+
+.header__inner {
+    max-width: 1230px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu__logo {
+    font-size: 2.625rem;
+}
+
+.nav__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.nav__link {
+    display: inline-block;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    color: black;
+    font-size: 2.25rem;
+    text-decoration-line: none;
+    -moz-text-decoration-line: none;
+}
+
+#trigger {
+    display: none;
+    color: black;
+    font-size: 2.25rem;
+    text-decoration-line: none;
+}
+
+.nav__link:last-child {
+    padding-right: 0px;
+}
+
+.nav__auth {
+    width: 100%;
+    font-size: 2.25rem;
+}
+
+.main {
+    height: 100%;
+}
+
+.main__img {
+    height: 580px;
+    border: solid;
+}
+
+.main__content {
+    max-width: 1230px;
+    padding: 60px 15px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.main__info {
+    width: 384px;
+    font-size: 1.75rem;
+}
+
+.info__border {
+    border: 1px solid #707070;
+    margin-top: 14px;
+}
+
+.info__content {
+    font-size: 1.25rem;
+}
+
+.concert-background-color-base {
+    background-color: #0303039D;
+}
+
+.concert {
+    max-width: 1230px;
+    padding: 102px 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.concert__title {
+    color: white;
+    font-size: 2.5rem;
+    padding-bottom: 24px;
+    border-bottom: 1px solid white;
+}
+
+.concert__content {
+    padding-top: 36px;
+}
+
+.concert__content>div:last-child {
+    border-bottom: 0;
+}
+
+.media {
+    color: white;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+}
+
+.media__img-wrapper {
+    flex: 0 1 27.58333%;
+    margin-right: 2%;
+}
+
+.media__img {
+    width: 100%;
+    height: 330px;
+    background-color: white;
+}
+
+.media__body {
+    flex: 1;
+}
+
+.media__title {
+    font-size: 1.875rem;
+    margin-bottom: 36px;
+}
+
+.media__text {
+    font-size: 1.25rem;
+}
+
+.footer {
+    background-color: #525151;
+    padding-top: 61px;
+    padding-bottom: 91px;
+    color: white;
+}
+
+.footer__inner {
+    max-width: 1230px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footer__menu {
+    font-size: 1.875rem;
+    padding-bottom: 30px;
+    border-bottom: 2px solid white;
+}
+
+.footer__contact {
+    padding-top: 86px;
+    font-size: 1.625rem;
+    margin-bottom: 60px;
+}
+
+.footer__btn {
+    display: inline-block;
+    width: 236px;
+    max-width: 100%;
+    padding: 20px 10px;
+    background-color: #403E3E;
+    border-radius: 21px;
+    -webkit-border-radius: 21px;
+    -moz-border-radius: 21px;
+    -ms-border-radius: 21px;
+    -o-border-radius: 21px;
+    font-size: 1.625rem;
+    text-align: center;
+}
+
+/*
+TODO header가 모바일에서 display:none 상태에서 사이즈가 증가하여 media query가 해제 될 경우 display:none 상태를 해제 해줘야함
+*/
+@media screen and (max-width:1023px) {
+    .menu {
+        display: block;
+        position: relative;
+    }
+
+    .nav__inner {
+        display: none;
+        text-align: right;
+    }
+
+    .nav__link {
+        display: block;
+        padding: 10px 0;
+    }
+
+    #trigger {
+        display: block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    .main__content {
+        display: block;
+        margin-bottom: -20px;
+    }
+
+    .main__info {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .media {
+        display: block;
+    }
+
+    .media__body {
+        padding-top: 20px;
+    }
+
+    .media__title {
+        margin-bottom: 10px;
+    }
+}
