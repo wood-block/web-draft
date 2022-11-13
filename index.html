@@ -1,52 +1,74 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang='en'>
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Calendar</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet" />
+  <meta charset='utf-8' />
+  <link href='css/main.css' rel='stylesheet' />
+  <script src='js/main.js'></script>
+  <script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var calendarEl = document.getElementById('calendar');
+      var calendar = new FullCalendar.Calendar(calendarEl, {
+        HeaderToolbar: { center: 'dayGridMonth' },
+        //initialView: 'dayGridMonth',
+        // weekNumbers: false,
+        // weekends: false,
+
+        headerToolbar: {
+          left: 'profile',
+          center: 'title',
+          right: 'search'
+        },
+        customButtons: {
+          profile: {
+            text: 'profile',
+            click: function () {
+              alert('show your user profile');
+            }
+          },
+          search: {
+            text: 'search',
+            click: function () {
+              alert('you can search something');
+            }
+          }
+        },
+        views: {
+
+          dayGridMonth: {
+            // titleFormat: { year: 'numeric', month: 'numeric', day: 'numeric' },
+            // hiddenDays: [2, 4]
+            dayHeaderFormat: { weekday: 'short' },
+
+            title: 'musical',
+
+
+          },
+          week: {
+
+          }
+        }
+      });
+      calendar.setOption('locale', 'kr');
+      // calendar.changeView('timeGrid', {
+      //   start: '2017-06-01',
+      //   end: '2017-06-05'
+      // });
+
+      calendar.render();
+
+      calendar.batchRendering(function () {
+        calendar.changeView('dayGridMonth');
+        calendar.addEvent({ title: 'new event', start: '2018-09-01' });
+      });
+    });
+
+  </script>
 </head>
 
 <body>
-  <header class="header">
-    <div class="header__inner">
-      <div class="user">
-        <img class="user__logo" src="image/user__logo.JPG">
-      </div>
-      <div class="name">
-        <a class="name__link" href="">뮤지컬팝스오케스트라</a>
-      </div>
-      <div class="search">
-        <img class="search__logo" src="image/search__logo.JPG">
-      </div>
-    </div>
-  </header>
-  <section class="main">
-    <div class="container">
-      <div class="calendar">
-        <div class="weekdays">
-          <div class="Sun">일</div>
-          <div class="Mon">월</div>
-          <div class="Tue">화</div>
-          <div class="Wed">수</div>
-          <div class="Thu">목</div>
-          <div class="Fri">금</div>
-          <div class="Sat">토</div>
-        </div>
-        <div class="days"></div>
-      </div>
-    </div>
-  </section>
-  <section class="bottom-navigation">
-    <div class="navigation">
-
-    </div>
-  </section>
-  <script src="js/script.js"></script>
+  <div id='calendar'></div>
 </body>
 
 </html>
