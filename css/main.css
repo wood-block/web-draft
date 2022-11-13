@@ -2,6 +2,11 @@
   --fc-border-color: white;
   --fc-daygrid-event-dot-width: 5px;
 } */
+
+.fc-day-other {
+  background-color: white;
+}
+
 .fc-day-grid {
   background-color: #ECE3FE;
 }
@@ -20,7 +25,7 @@
   --fc-page-bg-color: #ECE3FE;
   --fc-neutral-bg-color: rgba(208, 208, 208, 0.3);
   --fc-neutral-text-color: #808080;
-  --fc-border-color: #ddd;
+  --fc-border-color: white;
 
 
   --fc-button-text-color: #fff;
@@ -955,7 +960,7 @@ A HORIZONTAL event
 
 .fc .fc-daygrid-day-top {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
 }
 
 .fc .fc-day-other .fc-daygrid-day-top {
@@ -1931,7 +1936,15 @@ A VERTICAL event
   background-color: var(--bs-gray-200);
 }
 
-.fc td,
+/* .fc td,
 .fc th {
   background-color: #ECE3FE;
+} */
+
+.fc-day {
+  background-color: #ECE3FE;
+}
+
+.fc-day-other {
+  background-color: #F9F6FF;
 }
