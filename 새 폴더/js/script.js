@@ -5,27 +5,12 @@ const renderCalendar = () => {
 
   const monthDays = document.querySelector(".days");
 
-  // the end day of this month
   const lastDay = new Date(
     date.getFullYear(),
     date.getMonth() + 1,
     0
   ).getDate();
 
-  // the end day of next month
-  var next__lastDay;
-  if (date.getMonth() != 11) {
-    next__lastDay = new Date(
-      date.getFullYear(),
-      date.getMonth() + 2,
-      0
-    ).getDate();
-  }
-  else {
-    next__lastDay == 31;
-  }
-
-  // the end day of prev month
   const prevLastDay = new Date(
     date.getFullYear(),
     date.getMonth(),
@@ -42,31 +27,49 @@ const renderCalendar = () => {
 
   const nextDays = 7 - lastDayIndex - 1;
 
+  const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+
   let days = "";
 
-  // 저번달
   for (let x = firstDayIndex; x > 0; x--) {
-    days += `<div class="prev-date" style="background-color: #F9F6FF">${prevLastDay - x + 1}</div>`;
+    days += `<div class="prev-date">${prevLastDay - x + 1}</div>`;
   }
 
-  // 이번달 달력
   for (let i = 1; i <= lastDay; i++) {
     if (
       i === new Date().getDate() &&
       date.getMonth() === new Date().getMonth()
     ) {
       days += `<div class="today" style="background-color: #C2A8FF;">${i}</div>`;
+    } 
+    else if (
+      i % 7 === 0 
+    ) {
+
     }
     else {
       days += `<div>${i}</div>`;
     }
   }
 
-  // 다음달 달력
-  for (let i = 1; i <= next__lastDay; i++) {
-    days += `<div class="next-date"  style="background-color: #F9F6FF">${i}</div>`;
+  for (let j = 1; j <= nextDays; j++) {
+    days += `<div class="next-date">${j}</div>`;
     monthDays.innerHTML = days;
   }
 };
+
 
 renderCalendar();

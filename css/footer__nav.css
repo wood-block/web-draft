@@ -1,0 +1,19 @@
+.footer__nav {
+    height: 9vh;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__inner {
+    width: 95%;
+    display: flex;
+
+}
+
+.footer__inner div {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% / 5);
+    height: 100px;
+    justify-content: center;
+}
