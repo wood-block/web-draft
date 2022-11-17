@@ -5,7 +5,6 @@
 .intro,
 .login {
     width: 100%;
-
 }
 
 .woodblock {
@@ -14,6 +13,7 @@
 }
 
 .intro__inner {
+    margin: 2rem 0;
     justify-content: center;
     display: flex;
 }
@@ -27,12 +27,10 @@
     font-size: 3em;
 }
 
-.login__form {}
-
 .id,
 .pw,
-.login__service {
-    margin: 5rem 0;
+.login__btn {
+    margin: 1rem 0;
     justify-content: center;
     display: flex;
 }

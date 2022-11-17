@@ -6,14 +6,42 @@
 
 .footer__inner {
     width: 95%;
+    justify-content: center;
     display: flex;
-
 }
 
-.footer__inner div {
+.foot__fa {
+    font-size: 36px;
     display: flex;
-    flex-wrap: wrap;
-    width: calc(100% / 5);
-    height: 100px;
     justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.footNav__btn {
+    margin-top: 2rem;
+    width: calc(100% / 5);
+    justify-content: center;
+}
+
+.footNav__icon,
+.footNav__text {
+    margin-bottom: 0.8rem;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+.add__nav {
+    display: hidden;
+    width: 0;
+    position: relative;
+    z-index: 1;
+    right: 15rem;
+    bottom: 12rem;
+}
+
+.addNav__btn {
+    font-size: 7rem;
+    color: #6524ff;
 }

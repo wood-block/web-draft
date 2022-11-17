@@ -10,7 +10,7 @@ html {
 }
 
 .main {
-  height: calc(14rem * 9 + 3rem);
+  height: calc(20rem * 9 + 3rem);
 }
 
 .container {
@@ -85,27 +85,21 @@ html {
 .days div {
   font-size: 1.4rem;
   width: calc(100% / 7);
-  height: 14rem;
+  height: 20rem;
   display: flex;
   /* justify-content: center;
   align-items: center; */
-  transition: background-color 0.2s;
-  border: #FFF solid 1px;
+  /* transition: background-color 0.2s; */
+  border: 1px solid #FFF;
   background-color: #ECE3FE;
 }
 
-.Sun {
-  color: red;
-}
-
-.Sat {
-  color: blue;
-}
-
+.Sun,
 .days div:nth-child(7n-6) {
   color: red;
 }
 
+.Sat,
 .days div:nth-child(7n) {
   color: blue;
 }
@@ -115,6 +109,7 @@ html {
   border: 0.2rem solid #FFF;
   cursor: pointer;
 }
+
 
 /* .days div {
   background-color: #F9F6FF;
