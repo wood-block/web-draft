@@ -8,7 +8,7 @@ a {
     padding-right: var(--layout-padding-size);
     max-width: var(--default-width);
     width: 100%;
-    height: 9vh;
+    height: 64px;
     display: flex;
     justify-content: center;
 }
