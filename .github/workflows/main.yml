@@ -29,6 +29,7 @@ jobs:
       - name: Install and Build 🔧
         run: |
           cd frontend
+          npm install -g yarn
           yarn --version
           yarn --prefer-offline --frozen-lockfile
           yarn build
