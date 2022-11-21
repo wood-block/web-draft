@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang='ko'>
+
+<head>
+  <meta charset='utf-8' />
+  <link href='css/main.css' rel='stylesheet' />
+  <script src='js/main.js'></script>
+  <script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+      var calendarEl = document.getElementById('calendar');
+      var calendar = new FullCalendar.Calendar(calendarEl, {
+        // contentHeight: 900,
+        expandRows: true,
+        HeaderToolbar: { center: 'dayGridMonth' },
+        //initialView: 'dayGridMonth',
+        // weekNumbers: false,
+        // weekends: false,
+
+        headerToolbar: {
+          left: 'profile',
+          center: 'title',
+          right: 'search'
+        },
+        customButtons: {
+          profile: {
+            text: 'profile',
+            click: function () {
+              alert('show your user profile');
+            }
+          },
+          search: {
+            text: 'search',
+            click: function () {
+              alert('you can search something');
+            }
+          }
+        },
+        views: {
+
+          dayGridMonth: {
+            // titleFormat: { year: 'numeric', month: 'numeric', day: 'numeric' },
+            // hiddenDays: [2, 4]
+            dayHeaderFormat: { weekday: 'short' },
+
+            title: 'musical',
+
+
+          },
+          week: {
+
+          }
+        }
+      });
+
+      calendar.setOption('locale', 'kr');
+      // calendar.changeView('timeGrid', {
+      //   start: '2017-06-01',
+      //   end: '2017-06-05'
+      // });
+
+      calendar.render();
+
+      // calendar.batchRendering(function () {
+      //   calendar.changeView('dayGridMonth');
+      //   calendar.addEvent({ title: 'new event', start: '2018-09-01' });
+      // });
+    });
+
+  </script>
+</head>
+
+<body>
+  <div id='calendar'></div>
+</body>
+
+</html>

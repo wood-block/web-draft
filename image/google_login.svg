@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="654" height="80" viewBox="0 0 654 80">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_317" data-name="사각형 317" width="38.743" height="39.534" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="google_login" data-name="google login" transform="translate(-48 -1314)">
+    <rect id="사각형_316" data-name="사각형 316" width="654" height="80" rx="20" transform="translate(48 1314)" fill="#ebebeb"/>
+    <text id="구글로시작하기" transform="translate(375 1367)" font-size="30" font-family="NotoSansCJKkr-Medium, Noto Sans CJK KR" font-weight="500"><tspan x="-96" y="0">구글로시작하기</tspan></text>
+    <g id="그룹_36" data-name="그룹 36" transform="translate(70.757 1334.233)">
+      <g id="그룹_35" data-name="그룹 35" clip-path="url(#clip-path)">
+        <path id="패스_7619" data-name="패스 7619" d="M125.125,90.893a22.7,22.7,0,0,0-.359-4.043H106.149V94.5h10.638a9.094,9.094,0,0,1-3.944,5.966v4.96h6.388c3.738-3.441,5.894-8.509,5.894-14.529" transform="translate(-86.382 -70.677)" fill="#3e82f1" fill-rule="evenodd"/>
+        <path id="패스_7620" data-name="패스 7620" d="M28.955,142.328a18.871,18.871,0,0,0,13.082-4.789l-6.388-4.96a11.925,11.925,0,0,1-17.754-6.263h-6.6v5.122a19.76,19.76,0,0,0,17.665,10.89" transform="translate(-9.188 -102.794)" fill="#32a753" fill-rule="evenodd"/>
+        <path id="패스_7621" data-name="패스 7621" d="M8.706,71.112a11.686,11.686,0,0,1,0-7.511V58.479H2.1a19.791,19.791,0,0,0,0,17.754Z" transform="translate(0 -47.589)" fill="#f9bb00" fill-rule="evenodd"/>
+        <path id="패스_7622" data-name="패스 7622" d="M28.955,7.863a10.679,10.679,0,0,1,7.556,2.956L42.18,5.149A19,19,0,0,0,28.955,0,19.76,19.76,0,0,0,11.29,10.891l6.6,5.121a11.78,11.78,0,0,1,11.06-8.149" transform="translate(-9.188 -0.001)" fill="#e74133" fill-rule="evenodd"/>
+      </g>
+    </g>
+  </g>
+</svg>

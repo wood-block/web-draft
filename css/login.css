@@ -1,0 +1,36 @@
+.container__inner {
+    width: 95%;
+}
+
+.intro,
+.login {
+    width: 100%;
+}
+
+.woodblock {
+    justify-content: center;
+    display: flex;
+}
+
+.intro__inner {
+    margin: 2rem 0;
+    justify-content: center;
+    display: flex;
+}
+
+.woodblock__logo {
+    width: 30rem;
+    display: flex;
+}
+
+.intro__text {
+    font-size: 3em;
+}
+
+.id,
+.pw,
+.login__btn {
+    margin: 1rem 0;
+    justify-content: center;
+    display: flex;
+}
