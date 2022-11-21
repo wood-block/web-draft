@@ -1,0 +1,42 @@
+@import "https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap";
+
+:root {
+  --default-font-family: "Noto Sans KR", sans-serif;
+
+  font-family: var(--default-font-family);
+
+  /* Layout */
+  --layout-horizontal-padding: 16px;
+  --layout-max-width: 1232px;
+
+  /* Header */
+  --header-title: 1.125rem; // 18px/16px
+  --header-height: 64px;
+  --header-icon-size: 24px;
+  --header-background-color: white;
+
+  /* Footer */
+  --footer-height: 56px;
+  --footer-icon-size: 24px;
+  --footer-background-color: white;
+
+  /* Calendar */
+  --calendar-font-size: 0.625rem; // 10px/16px
+  --calendar-title-font-size: 1.25rem; // 20px/16px
+  --calendar-day-color: #e4d9ffb2;
+  --calendar-today-color: #6524ff65;
+  --calendar-day-other-color: #e4d9ff3c;
+}
+
+.wrapper {
+  max-width: var(--layout-max-width);
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-left: var(--layout-horizontal-padding);
+  padding-right: var(--layout-horizontal-padding);
+}
+
+.container {
+  padding-bottom: calc(var(--footer-height) + 20px);
+}
