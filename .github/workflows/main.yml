@@ -24,14 +24,13 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'yarn'
-          cache-dependency-path: frontend/yarn.lock
+          cache: 'npm'
+          cache-dependency-path: frontend/package-lock.json
       - name: Install and Build 🔧
         run: |
           cd frontend
-          npm pkg delete scripts.prepare
-          yarn --prefer-offline --frozen-lockfile --ignore-scripts
-          yarn build
+          npm ci
+          npm run build
       - name: copy file via ssh
         uses: appleboy/scp-action@master
         if: ${{ github.base_ref == 'develop' }}
