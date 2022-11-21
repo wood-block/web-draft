@@ -12,7 +12,7 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     env:
-      CI: false
+      CI: true
 
     strategy:
       matrix:
