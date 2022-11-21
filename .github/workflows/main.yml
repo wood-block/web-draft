@@ -29,9 +29,7 @@ jobs:
       - name: Install and Build 🔧
         run: |
           cd frontend
-          npm install -g yarn
-          yarn --version
-          yarn --prefer-offline --frozen-lockfile
+          yarn --prefer-offline --frozen-lockfile --ignore-script
           yarn build
       - name: copy file via ssh
         uses: appleboy/scp-action@master
