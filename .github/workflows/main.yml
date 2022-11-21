@@ -28,7 +28,8 @@ jobs:
           cache-dependency-path: frontend/yarn.lock
       - name: Install and Build 🔧
         run: |
-          # cd frontend
+          cd frontend
+          npm pkg delete scripts.prepare
           yarn --prefer-offline --frozen-lockfile --ignore-scripts
           yarn build
       - name: copy file via ssh
