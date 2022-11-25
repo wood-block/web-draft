@@ -3,6 +3,7 @@
   --fc-button-border-color: white;
   --fc-button-text-color: black;
   --fc-border-color: white;
+  --fc-today-bg-color: var(--calendar-today-color);
 }
 
 .fc-daygrid-day {
@@ -19,10 +20,6 @@
 .fc-day-other,
 .fc-day-past {
   background-color: var(--calendar-day-other-color);
-}
-
-.fc .fc-daygrid-day.fc-day-today {
-  background-color: var(--calendar-today-color);
 }
 
 .fc-daygrid-day-number {
