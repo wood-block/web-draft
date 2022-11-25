@@ -42,7 +42,7 @@ export const WeekCalendar = () => {
   useEffect(() => {
     if (date) {
       const endDate = new Date(date);
-      endDate.setDate(endDate.getDate() + 7);
+      endDate.setDate(endDate.getDate() + 6);
       setEndDate(endDate);
     }
   }, [date]);
@@ -57,6 +57,7 @@ export const WeekCalendar = () => {
   useEffect(() => {
     if (place && calendarRef.current && date && endDate) {
       const calendarApi = calendarRef.current.getApi();
+      endDate.setDate(endDate.getDate() + 1);
       placeApi
         .getPlaceReservationsByTime(
           place,
@@ -89,6 +90,7 @@ export const WeekCalendar = () => {
             end: endDate,
           }}
           height="auto"
+          slotLabelFormat={{ hour: "2-digit", meridiem: "narrow" }}
         />
       </div>
     </>
