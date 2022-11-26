@@ -44,7 +44,7 @@ jobs:
           strip_components: 2
       - name: copy file via ssh
         uses: appleboy/scp-action@master
-        if: ${{ github.ref == 'main' }}
+        if: ${{ github.event_name == 'push' }}
         with:
           host: ${{ secrets.WOODBLOCK_HOST }}
           username: ${{ secrets.WOODBLOCK_USERNAME }}
