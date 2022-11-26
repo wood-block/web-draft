@@ -1,0 +1,38 @@
+.footer {
+  margin: 0 auto;
+  width: 100%;
+  max-width: var(--layout-max-width);
+  height: var(--footer-height);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--footer-background-color);
+  z-index: 999; // calendar에 가려짐 방지
+}
+
+.footer__inner {
+  width: 100%;
+  padding-left: var(--layout-horizontal-padding);
+  padding-right: var(--layout-horizontal-padding);
+  display: flex;
+  justify-content: center;
+}
+
+.footer-nav__btn {
+  padding-top: 8px;
+  padding-bottom: 12px;
+  width: 100%;
+  min-width: 80px;
+  max-width: 168px;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-nav__icon {
+  font-size: var(--footer-icon-size);
+}
+
+.footer-nav__text {
+  font-size: 0.625rem;
+}

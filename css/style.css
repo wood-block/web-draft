@@ -1,0 +1,125 @@
+:root {
+  --default-width: 1232px;
+  --header-title: 1.125rem;
+  --layout-padding-size: 16px;
+  --calendar-font-size: 0.625rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+.main {
+  padding-left: var(--layout-padding-size);
+  padding-right: var(--layout-padding-size);
+  margin: 0 auto;
+  max-width: var(--default-width);
+  padding-bottom: 76px;
+}
+
+.container {
+  width: 100%;
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.calendar {
+  width: 100%;
+  background-color: #F9F6FF;
+}
+
+.month {
+  width: 100%;
+  height: 12rem;
+  background-color: #167e56;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.month i {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.month h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.month p {
+  font-size: 1.6rem;
+}
+
+.weekdays {
+  width: 100%;
+  height: 15px;
+  display: flex;
+}
+
+.weekdays div {
+  font-size: var(--calendar-font-size);
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  width: calc(100% / 7);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: #FFF solid 1px;
+  background-color: #ECE3FE;
+}
+
+.days {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.days div {
+  font-size: var(--calendar-font-size);
+  width: calc(100% / 7);
+  height: 122px;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  /* transition: background-color 0.2s; */
+  border: 1px solid #FFF;
+  background-color: #ECE3FE;
+}
+
+.Sun,
+.days div:nth-child(7n-6) {
+  color: red;
+}
+
+.Sat,
+.days div:nth-child(7n) {
+  color: blue;
+}
+
+.days div:hover {
+  background-color: #C2A8FF;
+  border: 0.2rem solid #FFF;
+  cursor: pointer;
+}
+
+
+/* .days div {
+  background-color: #F9F6FF;
+} */
+
+/* .today {
+  background-color: #C2A8FF;
+} */

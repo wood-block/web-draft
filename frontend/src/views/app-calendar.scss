@@ -1,0 +1,52 @@
+:root {
+  --fc-button-bg-color: white;
+  --fc-button-border-color: white;
+  --fc-button-text-color: black;
+  --fc-border-color: white;
+  --fc-today-bg-color: var(--calendar-today-color);
+}
+
+.fc-daygrid-day {
+  border: var(--calendar-border);
+  background-color: var(--calendar-day-color);
+}
+
+.fc-col-header-cell,
+.fc-day {
+  background-color: var(--calendar-day-color);
+  font-family: var(--default-font-family);
+}
+
+.fc-day-other,
+.fc-day-past {
+  background-color: var(--calendar-day-other-color);
+}
+
+.fc-daygrid-day-number {
+  font-size: var(--calendar-font-size);
+}
+
+.fc-day-sat .fc-daygrid-day-number {
+  color: blue;
+}
+
+.fc-day-sun .fc-daygrid-day-number {
+  color: red;
+}
+
+.fc-col-header-cell-cushion {
+  font-size: var(--calendar-font-size);
+}
+
+.fc .fc-toolbar-title {
+  font-size: var(--calendar-title-font-size);
+}
+
+.fc-daygrid-day-events {
+  font-size: 10px;
+  font-family: var(--default-font-family);
+}
+
+.fc-timegrid-slot-label-cushion {
+  font-size: 0.625rem;
+}
