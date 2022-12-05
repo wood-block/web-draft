@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "./App";
+import { authRouter } from "./routes/auth";
 import { AppCalendar, WeekCalendar } from "./views";
 
 export const router = createBrowserRouter([
@@ -17,4 +18,5 @@ export const router = createBrowserRouter([
     path: "/calendar/:date",
     element: <WeekCalendar />,
   },
+  authRouter,
 ]);
