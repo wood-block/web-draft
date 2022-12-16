@@ -47,12 +47,13 @@ export const AppCalendar = () => {
           headerToolbar={{ start: "prev", center: "title", end: "next" }}
           plugins={[dayGridPlugin, interactionPlugin]}
           initialView="dayGridMonth"
-          locale={"ko"}
+          locale={"en"}
           // height={600}
           weekends={true}
           selectable={true}
           dayMaxEvents={true}
           selectMirror={true}
+          slotLabelFormat={{ day: "numeric", meridiem: "narrow" }}
           dateClick={(info) => {
             navigate(`/calendar/${info.dateStr}`);
           }}

@@ -17,8 +17,7 @@
   font-family: var(--default-font-family);
 }
 
-.fc-day-other,
-.fc-day-past {
+.fc-day-other {
   background-color: var(--calendar-day-other-color);
 }
 
@@ -26,12 +25,18 @@
   font-size: var(--calendar-font-size);
 }
 
+.fc-day-sat div a,
 .fc-day-sat .fc-daygrid-day-number {
   color: blue;
 }
 
+.fc-day-sun div a,
 .fc-day-sun .fc-daygrid-day-number {
   color: red;
+}
+
+.fc-col-header-cell {
+  background-color: var(--calendar-title-day-color);
 }
 
 .fc-col-header-cell-cushion {
@@ -49,4 +54,12 @@
 
 .fc-timegrid-slot-label-cushion {
   font-size: 0.625rem;
+}
+
+.fc .fc-day-other .fc-daygrid-day-top {
+  opacity: 1;
+}
+
+.fc .fc-daygrid-day-top { 
+  flex-direction: row;
 }
